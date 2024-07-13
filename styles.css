@@ -1,0 +1,281 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  background-color: #fbf6f6;
+}
+
+header{
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+header h3{
+  color: rgb(54, 30, 143);
+}
+
+header h3 span{
+  display: none;
+}
+
+header nav{
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: rgb(33, 46, 58);
+}
+
+header nav a:hover{
+  color: rgb(54, 30, 143);
+}
+
+#about{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#about div{
+  padding: 8px;
+}
+
+#about #myinfo, #phrase{
+  font-size: 16px;
+  padding: 16px;
+}
+
+#about p{
+  margin-top: 8px;
+}
+
+#about p span{
+  color: rgb(54, 30, 143);
+  font-weight: 700;
+  font-size: 24px;
+  margin-right: 4px;
+}
+
+#about #phrase{
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(33, 46, 58);
+  font-weight: 500;
+}
+
+#about img{
+  width: 100%;
+  padding: 8px;
+}
+
+#skills{
+  margin-top: 50px;
+}
+
+#skills h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(54, 30, 143);
+}
+
+#skills div{
+  padding-left: 16px;
+}
+
+#skills div div{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  gap: 14px;
+}
+
+#skills div div img{
+  width: 40px;
+  height: 40px;
+}
+
+#skills div div p{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(33, 46, 58);
+}
+
+#cv {
+  margin-top: 60px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cv p{
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#cv p span{
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(54, 30, 143);
+  font-weight: bold;
+}
+
+#cv button{
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: rgba(55, 30, 143, 0.837);
+  border: none;
+  border-radius: 12px;
+}
+
+#cv button:hover{
+  opacity: 0.85;
+}
+
+#contact{
+  margin-top: 60px;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+#contact h2{
+  color: rgb(54, 30, 143);
+  margin-bottom: 20px;
+}
+
+#contact form label{
+ font-size: 20px;
+ font-weight: bold;
+ color: rgb(33, 46, 58);
+}
+
+#contact form input, textarea{
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(33, 46, 58);
+  width: 100%;
+  border-radius: 4px;
+}
+
+#contact form button{
+  float: right;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(55, 30, 143, 0.837);
+  border: none;
+  border-radius: 4px;
+}
+
+#contact form button:hover {
+  opacity: 0.85;
+}
+
+#contact p{
+  margin-top: 30px;
+}
+
+
+@media (min-width: 520px) {
+  header {
+    padding: 20px;
+  }
+
+  header h3{
+    font-size: 20px;
+  }
+
+  header nav{
+    gap: 16px;
+  }
+
+  #about {
+    padding: 14px;
+  }
+}
+
+@media (min-width: 680px) {
+  header {
+    padding: 30px;
+  }
+
+  header h3{
+    font-size: 24px;
+  }
+
+  header h3 span{
+    display: inline;
+  }
+  
+
+  header nav{
+    gap: 32px;
+  }
+
+  #skills div{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 12px 24px;
+    margin: 0;
+  }
+
+  #cv p span{
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 900px) {
+  #about{
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px; 
+  }
+
+ #about #myinfo{
+  padding: 28px;
+ }
+
+  #about p{
+    margin-top: 0px;
+  }
+
+  #about #myinfo, #phrase{
+    font-size: 24px;
+  }
+
+  #about #phrase{
+    padding-right: 28px;
+    float: right;
+  }
+
+  #about img{
+    width: 500px;
+    height: 500px;
+    padding: 0;
+  }
+}

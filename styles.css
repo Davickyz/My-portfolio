@@ -52,6 +52,10 @@ header nav a:hover{
   padding: 8px;
 }
 
+#about #myinfo{
+  text-align: center;
+}
+
 #about #myinfo, #phrase{
   font-size: 16px;
   padding: 16px;
